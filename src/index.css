@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0B0B0B;
+  --bg2: #111111;
+  --card: #1E1E1E;
+  --card2: #2a2a2a;
+  --primary: #39FF5A;
+  --secondary: #FF9F1C;
+  --text: #F5F5F5;
+  --muted: #888;
+  --danger: #ff4444;
+  --success: #39FF5A;
+  --border: #2a2a2a;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+button { cursor: pointer; font-family: inherit; }
+input, select, textarea { font-family: inherit; }
+
+.btn-primary {
+  background: var(--primary);
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s;
+}
+.btn-primary:hover { opacity: 0.85; }
+
+.btn-secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+.btn-secondary:hover { background: var(--primary); color: #000; }
+
+.btn-danger {
+  background: transparent;
+  color: var(--danger);
+  border: 1.5px solid var(--danger);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 12px;
+}
+.btn-danger:hover { background: var(--danger); color: #fff; }
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid var(--border);
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.badge-green { background: #0d2a14; color: var(--primary); }
+.badge-orange { background: #2a1800; color: var(--secondary); }
+.badge-red { background: #2a0a0a; color: var(--danger); }
+.badge-gray { background: #222; color: var(--muted); }
